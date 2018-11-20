@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
-class SignUp extends Component {
+class SignIn extends Component {
   state = {
 	  email: '',
-	  password: '',
-	  username: ''
+	  password: ''
   }
   // when user changes input field, it fires 
 
@@ -25,12 +24,7 @@ class SignUp extends Component {
 		<form
 		onSubmit={this.handleSubmit} 
 		className="white">
-		<h5 className="grey-text text-darken-3">회원 가입</h5>
-			<div className="input-field">
-			<label htmlFor="username">이름</label>
-			<input type="text" id="username" 
-			onChange={this.handleChange}/>
-		</div>
+		<h5 className="grey-text text-darken-3">로그인</h5>
 		<div className="input-field">
 			<label htmlFor="email">이메일</label>
 			<input type="email" id="email" 
@@ -42,8 +36,8 @@ class SignUp extends Component {
 			onChange={this.handleChange}/>
 		</div>
 		<div className="input-field">
-		<button className="btn orange lighten-10 z-depth-0">
-			제출
+		<button className="btn pink lighten-1 z-depth-0">
+			 로그인
 		</button>
 		</div>
 		</form>
@@ -52,4 +46,4 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp
+export default SignIn;
